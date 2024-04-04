@@ -6,6 +6,7 @@ from dash import html, dcc, Input, Output, State
 #loading the model
 with open('waste_predictor.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
+server =app.server
 
 
 #initializing the dash app
